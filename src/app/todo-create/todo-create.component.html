@@ -1,0 +1,30 @@
+<!--Inicio de la card-->
+<div class="card">
+  <!--Cuerpo de la card-->
+    <div class="card-body">
+      <h5 class="card-title text-center ">Creación de Tarea Geotech</h5>
+      <form [formGroup]="form">
+        <div class="row p-4">
+          <label>Nombre de Tarea</label>
+          <input type="text" class="form-control " formControlName="name" required>
+        </div>
+        <div class="mb-3 row p-4">
+          <label>Descripcion de Tarea</label>
+          <input type="text" class="form-control " formControlName="description" required>
+        </div>
+      </form>
+      <div class="row p-4">
+        <button
+          class="btn btn-success mt-2"
+          (click)="onSaveTodo()"
+          [disabled]="!form"
+        >
+          Guardar Tarea
+          <i class="fa fa-newspaper"></i>
+        </button>
+      </div>
+    </div>
+  <!--Fin del cuerpo de la card-->
+</div>
+<!--Fin de la card-->
+

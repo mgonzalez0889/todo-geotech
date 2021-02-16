@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "todo-geo"
+  "defaultProject": "todo-geo",
+  "cli": {
+    "analytics": "4b78c705-0151-4219-b1b4-16aef3e74a36"
+  }
 }
